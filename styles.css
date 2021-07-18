@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10px;
+}
+
+.card {
+  max-width: 400px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__image {
+  margin-bottom: 25px;
+}
+
+.card__heading {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  color: var(--very-light-gray);
+}
+
+.card__body {
+  margin-bottom: 60px;
+  color: var(--transparent-white);
+}
+
+.btn {
+  padding: 15px 40px;
+  border-radius: 32px;
+  border: 1px solid transparent;
+  text-transform: capitalize;
+  background-color: var(--very-light-gray);
+  transition: all 300ms;
+}
+
+.card1 {
+  background-color: var(--bright-orange);
+  border-radius: 5px 0 0 5px;
+}
+
+.btn1 {
+  border: 1px solid (--bright-orange);
+  color: var(--bright-orange);
+}
+
+.btn1:hover {
+  background-color: var(--bright-orange);
+  color: var(--very-light-gray);
+  border: 1px solid var(--very-light-gray);
+}
+
+.card2 {
+  background-color: var(--dark-cyan);
+}
+
+.btn2 {
+  border: 1px solid (--dark-cyan);
+  color: var(--dark-cyan);
+}
+
+.btn2:hover {
+  background-color: var(--dark-cyan);
+  color: var(--very-light-gray);
+  border: 1px solid var(--very-light-gray);
+}
+
+.card3 {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 5px 5px 0;
+}
+
+.btn3 {
+  border: 1px solid (--very-dark-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.btn3:hover {
+  background-color: var(--very-dark-cyan);
+  color: var(--very-light-gray);
+  border: 1px solid var(--very-light-gray);
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .card1 {
+    border-radius: 5px 5px 0 0;
+  }
+  .card3 {
+    border-radius: 0 0 5px 5px;
+  }
+}
