@@ -21,6 +21,10 @@ body {
   background-color: var(--very-light-gray);
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
